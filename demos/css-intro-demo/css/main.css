@@ -1,7 +1,18 @@
 #first-paragraph {
     color: blue;
+    background-color: lavender;
+    font-style: italic;
+    text-align: right;
 }
 
 #second-paragraph {
     color: #12deaa;
+    background-color: darkslateblue;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#bold-paragraph {
+    font-weight: bold;
+    background-color: orange;
 }
