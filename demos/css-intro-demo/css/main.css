@@ -16,3 +16,20 @@
     font-weight: bold;
     background-color: orange;
 }
+
+#span1 {
+    color: pink;
+    font-weight: bold;
+    font-size: 48px;
+}
+#span2 {
+    font-style: italic;
+    text-decoration: line-through;
+}
+#span3 {
+    background-color: yellow;
+}
+#span4 {
+    color: red;
+    font-size: 2px;
+}
