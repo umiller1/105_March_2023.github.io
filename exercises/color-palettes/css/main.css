@@ -1,0 +1,19 @@
+h2, h3, h4 {
+    text-align: center;
+}
+div {
+    padding: 24px;
+}
+
+#p1-d1 {
+    background-color: #00fdff;
+}
+#p1-d2 {
+    background-color: #e397ff;
+}
+#p1-d3 {
+    background-color: #e8a62d;
+}
+#p1-d1, #p1-d2, #p1-d3, #p1-heading {
+    font-family: 'Courier New', Courier, monospace;
+}
