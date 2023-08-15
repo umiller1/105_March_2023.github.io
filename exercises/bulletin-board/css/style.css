@@ -11,8 +11,24 @@
     padding: 24px;
     background-color: yellow;
     display: inline-block;
-    width: 200px;
+    width: 150px;
+}
+.post-it div {
+    text-align: center;
 }
 img {
     width: 100%;
+}
+
+#p2 {
+    background-color: aqua;
+}
+.fa-hippo {
+    color: olivedrab;
+}
+.fa-heart {
+    color: red;
+}
+.fa-cloud {
+    color: lavender;
 }
