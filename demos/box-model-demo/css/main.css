@@ -1,0 +1,38 @@
+div {
+    border: 10px dashed orange;
+    /*
+        There are other ways to apply borders to element. Like below:
+        border-top: 5px dotted red; 
+    */
+    margin: 24px 0px;
+    /*     
+        Margin can have up to 4 values
+        One value is all around
+        Two values is top/bottom and left/right
+        Three values is top, left/right, bottom
+        Four values is top, right, bottom, left 
+        margin: 50px;
+        margin: 10px 100px 40px;
+        margin: 25px 100px 5px 10px;
+    */
+    padding: 25px 36px;
+    /*     
+        Padding can also have up to 4 values
+        One value is all around
+        Two values is top/bottom and left/right
+        Three values is top, left/right, bottom
+        Four values is top, right, bottom, left 
+        padding: 50px 10px;
+        padding: 10px 100px 40px;
+        padding: 25px 100px 5px 10px;
+    */
+    background-color: lavender;
+}
+
+p {
+    background-color: coral;
+    margin: 60px;
+    padding: 100px 25px;
+    /* border: 20px solid cornflowerblue; */
+    border-radius: 40px;
+}
