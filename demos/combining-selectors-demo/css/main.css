@@ -19,3 +19,19 @@ p.warning {
 p.warning a {
     color: greenyellow;
 }
+
+ul {
+    color: green;
+}
+
+ul a {
+    color: lime;
+}
+
+ul p a {
+    color: pink;
+}
+
+ul div a {
+    color: deepskyblue;
+}
