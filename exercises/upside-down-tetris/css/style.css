@@ -13,6 +13,10 @@
     display: inline-block;
 }
 
+.pink {
+    background-color: pink;
+    border-color: pink;
+}
 .orange {
     background-color: orange;
     border-color: orange;
