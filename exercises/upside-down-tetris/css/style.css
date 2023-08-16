@@ -40,3 +40,9 @@
 .wide {
     padding: 20px 52px;
 }
+.round {
+    border-radius: 100%;
+}
+.weird-round {
+    border-radius: 50% 20%;
+}
