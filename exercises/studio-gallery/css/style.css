@@ -8,8 +8,8 @@
 */
 .frame-1 {
     border: 6px ridge rgb(173, 132, 70);
-    margin: 30px 12px 0px;
-    box-shadow: -2px 2px 2px grey;
+    margin: 80px 12px 0px;
+    box-shadow: -2px 2px 2px black;
     transform: rotate(2deg);
 }
 
@@ -29,7 +29,7 @@
     border: 6px ridge rgb(173, 132, 70);
     margin: 30px 12px 0px;
     box-shadow: -2px 2px 2px grey;
-    transform: rotate(2deg);
+    transform: rotate(-2deg);
 }
 .frame-2 img {
     width: 60px;
@@ -38,9 +38,9 @@
 
 .frame-3 {
     border: 6px ridge rgb(173, 132, 70);
-    margin: 30px 12px 0px;
+    margin: 80px 12px 0px;
     box-shadow: -2px 2px 2px grey;
-    transform: rotate(2deg);
+    transform: rotate(22deg);
 }
 .frame-3 img {
     width: 80px;
