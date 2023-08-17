@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@200;400;700&family=Staatliches&display=swap');
+
+.hero {
+    margin: 25px auto;
+    max-width: 800px;
+}
+
+.hero img, .hero .content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    vertical-align: middle;
+}
+.hero img {
+    margin-right: 10px;
+}
+
+h1, h2, .linkbtn {
+    font-family: 'Staatliches', cursive;
+}
+p, li, a, blockquote {
+    font-family: 'Poppins', sans-serif;
+}
