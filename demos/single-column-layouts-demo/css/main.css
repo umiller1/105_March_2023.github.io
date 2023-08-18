@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.single-column {
+    width: 50%;
+    min-width: 500px;
+    max-width: 1200px;
+    /* Make the left column become a right column! */
+    margin: auto;
+}
+
+.light-container {
+    background-color: lavender;
+    padding: 48px 0px;
+}
+
+.dark-container {
+    background-color: #013d01;
+    color: white;
+    padding: 48px 0px;
+}
