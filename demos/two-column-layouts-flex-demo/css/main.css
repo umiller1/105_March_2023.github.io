@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+
+#two-columns {
+    display: flex;
+}
+
+#sidebar {
+    background-color: lavender;
+    width: 200px;
+    order: 2;
+}
+
+.main-content {
+    background-color: azure;
+    flex: 1;
+    order: 1;
+}
