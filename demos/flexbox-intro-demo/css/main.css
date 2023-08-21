@@ -1,12 +1,47 @@
-img {
-    max-width: 500px;
+img, p {
+    border: 2px solid blue;
 }
 
 .section1 {
+    border: 2px solid red;
     display: flex;
-    flex-direction: row-reverse;
     /* 
         Row and row-reverse have a main-axis of horizontal / x-axis and a cross-axis of vertical / y-axis
         Column and column-reverse have a main-axis of vertical / y-axis and a cross-axis of horizontal / x-axis
     */
+    flex-direction: row;
+    /* 
+        if flex-direction is set to row then align-items will work along the y-axis (or vertical direction)
+        if flex-direction is set to column then align-items will work along the x-axis (or horizontal direction)
+    */
+    align-items: center;
+    /*
+        if flex-direction is set to row then justify-content will work along the x-axis (or horizontal direction)
+        if flex-direction is set to column then justify-content will work along the y-axis (or vertical direction)
+    */
+    justify-content: space-evenly;
+    /*
+        It's also important to remember that if you're using one of the reverse directions, your align-items and justify-content will have reversed starting points as well.
+    */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1 img {
+    width: 100%;
+}
+.section1 .img-contain {
+    /*
+        The flex property can be used to specify the size that a Flexbox Item can grow to, relative to other Flexbox Items that also have the flex property set.
+
+        Actually, the flex property is a shorthand property, meaning it allows you to set and configure multiple flexbox-related properties at once; however, we're going to keep our examples here relatively simple.
+
+        Check out the Additional Resources section at the end if you want to dive deeper!
+    */
+    flex: 1;
+    order: 2;
+}
+.section1 p {
+    flex: 3;
+    order: 1;
 }
