@@ -28,6 +28,8 @@ img {
     grid-template-columns: 1fr 5fr 250px 1fr;
     grid-template-areas: ". main sidebar .";
     gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .sidebar {
@@ -100,16 +102,33 @@ img {
 
 #about {
     display: grid;
-    grid-template-columns: auto 2fr 100px auto;
+    grid-template-columns: 1fr 500px 150px 1fr;
     grid-template-areas: ". abt abtimg .";
     gap: 40px;
-    margin-top: 25px;
     border-top: 2px solid #790037;
-    padding: 25px;
+    padding: 25px 0;
+    height: min-content;
+    max-width: 1200px;
+    margin: 25px auto 0;
 }
 #about .content {
     grid-area: abt;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
 }
 #about .img-contain {
     grid-area: abtimg;
+    height: 150px;
+}
+#about .content div {
+    display: flex;
+    gap: 25px;
+}
+#about a i {
+    font-size: 25px;
+    color: #790037;
+}
+#about .img-contain img {
+    object-position: top;
 }
