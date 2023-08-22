@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barriecito&family=Roboto+Condensed:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+p, a, li, span {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo {
+    text-align: center;
+    margin: 25px auto;
+    font-family: 'Barriecito', cursive;
+    font-size: 10vw;
+}
+
+#two-col {
+    display: grid;
+    grid-template-columns: 1fr 5fr 250px 1fr;
+    grid-template-areas: ". main sidebar .";
+    gap: 40px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    color: white;
+    position: sticky;
+    top: 25px;
+    height: min-content;
+}
+.sidebar ul {
+    border: 10px ridge #790037;
+    background-color: #790037;
+    padding: 25px;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.sidebar h2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+.sidebar a:hover {
+    color: #ffd000;
+    font-size: 1.125em;
+}
+
+.main {
+    grid-area: main;
+}
+.main h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.main .author, .main .date {
+    margin: 10px 0 25px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.main .imgtxt {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px ;
+}
+.main .imgtxt p {
+    flex: 1;
+}
+.main .imgtxt div {
+    flex: 2;
+}
+
+.main .dualimg {
+    display: flex;
+    margin: 20px 0;
+}
+.main .dualimg div {
+    flex: 1;
+    border-right: 2px ridge crimson;
+}
+.main .dualimg div:last-child {
+    border-right: none;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: auto 2fr 100px auto;
+    grid-template-areas: ". abt abtimg .";
+    gap: 40px;
+    margin-top: 25px;
+    border-top: 2px solid #790037;
+    padding: 25px;
+}
+#about .content {
+    grid-area: abt;
+}
+#about .img-contain {
+    grid-area: abtimg;
+}
