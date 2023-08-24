@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+    ;
+}
+
+#header {
+    grid-area: header;
+    padding: 0px 36px;
+}
+
+#header a {
+    text-decoration: none;
+}
+#header #me {
+    color: #111111;
+}
+#header #tube {
+    color: white;
+    background-color: peru;
+    padding: 4px;
+    border-radius: 12px;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    padding:  0px 24px;
+}
+
+#sidebar ul {
+    padding: 12px 0px;
+    margin: 0px;
+    list-style-type: none;
+    border-bottom: 1px solid #aaa;
+}
+#sidebar ul a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+    padding: 12px;
+}
+#sidebar ul a:hover {
+    background-color: peru;
+    border-radius: 12px;
+    color: white;
+}
+
+#main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.metube-item {
+    flex: 250px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+.metube-item .thumbnail-placeholder {
+    aspect-ratio: 16 / 9;
+    background-image: url(../images/cake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.metube-item h4 {
+    margin: 8px;
+}
+.metube-item h4 a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+}
+.metube-item h4 a:hover {
+    text-decoration: underline;
+}
+.metube-item .video-channel {
+    margin-bottom: 4px;
+}
