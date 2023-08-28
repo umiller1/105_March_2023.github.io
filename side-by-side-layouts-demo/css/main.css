@@ -51,6 +51,7 @@ img {
     color: #16B6B3;
 }
 
+/* Three Cards implementation */
 #card-section {
     background-color: #FF0000;
     padding: 48px;
@@ -75,4 +76,51 @@ img {
 .card p {
     font-size: 24px;
     margin: 24px 0px 0px;
+}
+
+/* Comparison layout implementation */
+#second-main {
+    background: radial-gradient(at top right, #DAF7DC, #DAF7DC, #F7DBA7);
+    padding: 48px;
+}
+
+.comparisons-container {
+    text-align: center;
+    margin: 60px 0px;
+}
+
+.comparisons-container h3 {
+    font-size: 36px;
+}
+
+.comparisons-layout-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.comparisons-layout-1 .comparison-column {
+    background-color: #0D6594;
+    color: white;
+    padding: 24px;
+}
+
+.comparisons-layout-1 .comparison-column h4, .comparisons-layout-1 .comparison-column p {
+    padding: 24px 48px;
+}
+
+.comparisons-layout-1 .comparison-column h4 {
+    font-size: 24px;
+    background-color: #7591C1;
+    margin: 0;
+}
+
+.comparisons-layout-1 .comparison-column p {
+    font-size: 18px;
+    margin: 0px;
+    border-top: 3px solid #2F92BA;
+}
+.comparisons-layout-1 .comparison-column .label {
+    display: block;
+    font-weight: bolder;
+    padding-bottom: 12px;
 }
