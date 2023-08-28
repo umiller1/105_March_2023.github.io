@@ -144,3 +144,19 @@ img {
     padding: 24px;
     font-size: 24px;
 }
+
+/* Comparison layout 3 styles */
+.comparisons-layout-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #9296F0;
+}
+.comparisons-layout-3 div {
+    padding: 24px;
+    font-size: 24px;
+    border-bottom: 3px solid #BFFCF9;
+}
+
+.comparisons-layout-3 .label {
+    font-weight: bolder;
+}
