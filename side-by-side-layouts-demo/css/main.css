@@ -124,3 +124,23 @@ img {
     font-weight: bolder;
     padding-bottom: 12px;
 }
+
+/* Comparison layout 2 styles */
+.comparisons-layout-2 {
+    background-color: #E5F77D;
+    padding: 36px;
+}
+.comparison-row {
+    display: flex;
+    border-bottom: 3px solid #5C5D8D;
+    color: #14213d;
+}
+
+.comparison-row.comparison-header {
+    font-weight: bolder;
+}
+.comparison-row div {
+    flex: 1;
+    padding: 24px;
+    font-size: 24px;
+}
