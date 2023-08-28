@@ -50,3 +50,29 @@ img {
 .side-by-side .text-container .a-btn:hover {
     color: #16B6B3;
 }
+
+#card-section {
+    background-color: #FF0000;
+    padding: 48px;
+    color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    flex: 1;
+    border: 3px solid white;
+    padding: 36px;
+    text-align: center;
+    margin: 36px;
+}
+.card h3 {
+    font-size: 36px;
+    margin: 0;
+}
+.card p {
+    font-size: 24px;
+    margin: 24px 0px 0px;
+}
