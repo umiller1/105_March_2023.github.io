@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+h1 {
+    font-size:8vw;
+    margin: 10px 0;
+    padding: 0;
+}
+p {
+    margin-bottom: 10px;
+}
+
+#hero1 {
+    background-image: url(../images/tea.jpg);
+    align-items: center;
+}
+
+a {
+    display: block;
+    background-color: #00d9ff;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border: 7px solid #00d9ff;
+    transition: all .5s;
+}
+a:hover {
+    color: #00d9ff;
+    background-color: transparent;
+}
+
+#hero2 {
+    background-image: url(../images/giraff.jpg);
+    align-items: flex-end;
+    background-position: bottom;
+    padding-right: 10vw;
+}
+
+#hero3 {
+    background-image: url(../images/loser.jpg);
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    padding: 10vh;
+    background-position: bottom;
+}
