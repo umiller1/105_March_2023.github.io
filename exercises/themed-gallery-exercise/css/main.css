@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Tulpen+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2 {
+    font-family: 'Tulpen One', cursive;
+    font-size: 6rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+a {
+    font-family: 'Tulpen One', cursive;
+}
+a span {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#layout {
+    max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+#layout h1, #layout h3 {
+    text-align: center;
+}
+#layout h1 {
+    margin: 1.25rem auto;
+    color: #ff9900;
+    /* ginger cat supremacy! */
+}
+
+.gallery {
+    columns: 3 auto;
+    margin: 1.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #ff9900;
+}
+
+.btns {
+    display: flex;
+    gap: 1.25rem;
+    padding: 0 1.25rem;
+    margin: 1.25rem auto;
+}
+a {
+    display: block;
+    padding: 0.5rem;
+    flex: 1;
+    background-color: transparent;
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    border: 3px solid #ff9900;
+    transition: all .5s;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+a span {
+    display: none;
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+a:hover {
+    background-color: #ff9900;
+    color: white;
+}
+a:hover span {
+    display: inline;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery {
+        columns: 4 auto;
+    }
+}
