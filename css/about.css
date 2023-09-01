@@ -33,7 +33,7 @@ p, li, a, blockquote {
 .hero .img-holder {
     object-fit: cover;
     border-radius: 100%;
-    border: 5px solid #09cba7;
+    border: 5px solid #09a1cb;
     width: 50vw;
     height: 50vw;
     max-width: 50vh;
@@ -45,7 +45,7 @@ p, li, a, blockquote {
     width: 15vh;
     height: 15vh;
     border-radius: 100%;
-    background-color: #09cba7;
+    background-color: #09a1cb;
     top: 0;
     z-index: -1;
 }
@@ -74,12 +74,12 @@ p, li, a, blockquote {
     flex: 1;
 }
 .hero h1 {
-    border-bottom: 5px solid #09cba7;
+    border-bottom: 5px solid #09a1cb;
     margin-bottom: 15px;
     font-size: 40px;
 }
 .hero h1 span {
-    color: #fe4e86;
+    color: #ff6797;
 }
 
 .linkbtn {
