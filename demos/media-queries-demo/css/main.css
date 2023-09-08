@@ -4,7 +4,6 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-    background-color: teal;
 }
 
 #header, #footer {
@@ -74,26 +73,95 @@ body {
 
 .cards .card {
     flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+#card1 {
+    background: linear-gradient(to top, #00000088, #00000088), url(../images/pie.png);
+    background-size: cover;
+    background-position: center;
+}
+#card2 {
+    background: linear-gradient(to top, #00000088, #00000088), url(../images/drinks.png);
+    background-size: cover;
+    background-position: center;
+}
 
+.cards a, .promotion a {
+    display: inline-block;
+    background-color: #00be06;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
 
+.promotion a {
+    display: block;
+}
 
+#footer {
+    background-color: #2f2f2f;
+}
 
-
-
-
-
+#footer .links {
+    width: 80vw;
+    max-width: 1000px;
+    margin: 0px auto;
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    padding: 25px 0px;
+    justify-content: center;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+}
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 725px) and (min-width: 481px) {
-    body {
-        background-color: orange;
+@media screen and (max-width: 725px) {
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+    .hero-content h3 {
+        font-size: 1.125rem;
+    }
+    #main .cards {
+        flex-direction: column;
+        height: 100vh;
     }
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        background-color: purple;
+    .hero-content h1 {
+        font-size: 1.625rem;
+    }
+    .hero-content h3 {
+        font-size: 1rem;
+    }
+    .hero-content a {
+        display: block;
+        font-size: 1.125rem;
+    }
+    #main .promotion {
+        flex-direction: column;
+        height: auto;
+    }
+    .promotion .img-contain {
+        height: 200px;
+        width: 100%;
+        flex: auto;
+    }
+    .promotion .content {
+        flex: auto;
+    }
+    #footer .links {
+        flex-direction: column;
+        align-items: center;
     }
 }
