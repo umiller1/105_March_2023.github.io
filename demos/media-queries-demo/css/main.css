@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: teal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 725px) and (min-width: 481px) {
+    body {
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: purple;
+    }
+}
