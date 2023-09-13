@@ -1,0 +1,19 @@
+/* IMPORTS AND LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;300;400;700&display=swap');
+/* RESETS */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* VARIABLES */
+:root {
+    --main: #e1a177;
+}
+/* GENERAL STYLES */
+h1, h2 {
+    font-family: 'Lobster', cursive;
+}
+h3, p, li, blockquote {
+    font-family: 'Montserrat', sans-serif;
+}
