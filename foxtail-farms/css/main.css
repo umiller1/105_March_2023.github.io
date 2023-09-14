@@ -6,6 +6,9 @@
     margin: 0px;
     padding: 0px;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* VARIABLES */
 :root {
     --main: #e1a177;
@@ -18,7 +21,9 @@ h3, p, li, blockquote, a {
     font-family: 'Montserrat', sans-serif;
 }
 img {
-    width: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* PRIMARY LAYOUT */
@@ -172,21 +177,17 @@ body {
 #main {
     grid-area: main;
 }
+/* MARKET SECTION */
 #market {
     display: grid;
-    grid-template-columns: 1fr auto 1fr 1fr;
-    grid-template-rows: 250px 1fr 250px;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     grid-template-areas:
         "img1 img1 img1 img1"
         "img2 txtcontent txtcontent img3"
         "img4 scroll img5 img6"
     ;
     height: 100vh;
-}
-#market img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 #img1 {
     grid-area: img1;
@@ -237,40 +238,34 @@ body {
     grid-area: img6;
 }
 
+/* PRODUCTS SHOWCASE */
 #product-showcase {
-    height: 100vh;
+    max-height: 100vh;
 }
 #product-showcase .products-container {
-    height: 100%;
-    padding: 2rem 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    height: 100vh;
 }
 .products-container .product {
     display: flex;
-    align-items: center;
-    height: 100%;
     gap: 1.25rem;
 }
-.product .img-contain {
-    width: 25%;
+.img-contain {
     height: 100%;
 }
-.img-contain img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.products-container .pc-links {
+    display: flex;
+    gap: 1.125rem;
 }
-.product .content .special {
-    color: #e1a177;
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
+.products-container .pc-links a{
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    border: 2px solid #000;
 }
-.product .content h3 {
-    font-size: 1.125rem;
-}
-.product .content h2 {
-    font-size: 2.125rem;
-    margin: 0.5rem;
+.products-container .pc-links a.active{
+    background-color: #e1a177;
+    border-color: #e1a177;
+    
 }
