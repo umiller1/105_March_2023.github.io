@@ -1,0 +1,18 @@
+/* IMPORTS AND LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;900&display=swap');
+/* RESETS */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* GENERAL STYLES */
+:root {
+    --main: #00a651;
+    --alt: #ff4136;
+    --sub: #bdbdbd;
+    --blk: #111;
+    --wht: #eee;
+    --head: 'Bebas Neue', sans-serif;
+    --body: 'Lato', sans-serif;
+}
