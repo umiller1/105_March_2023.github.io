@@ -271,7 +271,7 @@ nav a.btn:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1.25rem 0px;
+    /* padding: 1.25rem 0px; */
 }
 footer a {
     display: inline-block;
