@@ -4,5 +4,50 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    outline: none; 
+    /* By default, some for elements have an outline on them when focused in */
 }
 /* GENERAL STYLES */
+/*
+    Optional container
+*/
+.contain {
+    width: 90vw;
+    max-width: 500px;
+    margin: 0px auto;
+}
+form {
+    margin-top: 1rem;
+}
+/* 
+    You can style inputs with type="text" or the appropriate type value filled in.
+
+    You can also easily style textareas by just calling their element name. Same goes for other form elements like select and option.
+*/
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 0.5rem 1rem; /* Padding to push the placeholder and text in */
+    border: 2px solid transparent; /* removing default border to add my own */
+    border-bottom: 2px solid #00ded3;
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    margin: 0.25rem 0px 1.125rem;
+}
+input[type=text]:focus, textarea:focus {
+    border: 2px solid #00ded3;
+}
+  
+/*
+    You can target the submit button the same way you'd target the other inputs, just replacing the type value with submit.
+*/
+input[type=submit] {
+    background-color: #00ded3;
+    border: 2px solid #00ded3;
+    color: black;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+input[type=submit]:hover {
+    background-color: transparent;
+}
+  

@@ -4,10 +4,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Me</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        
+        <!--
+            This overarching div is going to keep my form contained to stop it from growing too large.
+        -->
+        <div class="contain">
+            <!--
+                Every form starts of with a form element. All form elements need to be within a form element.
+            -->
+            <!--
+                The action attribute is how your form will properly work which requires you to write PHP or use PHP provided to you by a 3rd party form server like Getform.io
+            -->
+            <!--
+                The method attribute is how the data submitted to your form is retrieved and displayed to you. POST is one of the more common ones. If using a third party like Getform.io, you'll want to use the post method they have in their setup. Getform.io uses POST.
+            -->
+            <form action="#" method="POST">
+            <!--
+                The label is a form element that provides a label to an input element. The label's for attribute must be an exact match to the input's id attribute for accessibility purposes.
+            -->
+                <label for="fname">First Name</label>
+            <!--
+                The input is a form element that the user can interact with to fill in data. This data is what will be sent to you alongside it's label if it has one. The id attribute for the input must match the label's for attribute value exactly for accessibility purposes.
+            -->
+            <!--
+                The type attribute lets the input know what type of input it is. text is a common one. There is also email, password, date, time, and tel. There are others as well. Different types of inputs have different requirements from the user. For example, type="email" requires an @ symbol in it.
+                
+                The name attribute gives this input a name. Placeholder attribute is the placeholder that the user will see before filling in their data.
+
+                The required attribute makes an input required to fill out or else the user will be rendered unable to submit.
+            -->
+                <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+          
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+
+                <label for="cname">Company Name</label>
+                <input type="text" id="cname" name="companyname" placeholder="Your company name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+          
+                <label for="mssg">Message</label>
+                <textarea id="subject" name="subject" placeholder="Looking to hire?" required></textarea>
+            <!--
+                The submit value for type turns the input into the submit button for the form. The value attribute is what will be shown in the button. This is how a user will complete and send the form to you.
+            -->
+                <input type="submit" value="Send">
+            <!--
+                The input you see below is a hidden input that is here to prevent spams. It is an optional element and you do not need it for your form to work.
+            -->
+                <input type="hidden" name="_gotcha" style="display:none !important">
+            </form>
+          </div>
     </body>
 </html>
