@@ -1,4 +1,5 @@
 /* IMPORTS AND LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Satisfy&display=swap');
 /* RESETS */
 * {
     box-sizing: border-box;
@@ -6,3 +7,154 @@
     padding: 0px;
 }
 /* GENERAL STYLES */
+body {
+    background-color: #202020;
+    font-family: 'Quicksand', sans-serif;
+    color: #eee;
+}
+h1, h2 {
+    font-family: 'Satisfy', cursive;
+}
+img {
+    width: 100%;
+}
+.contain {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+/* Logo */
+.logo {
+    text-decoration: none;
+    margin-right: auto;
+    width: 10rem;
+}
+
+/* Header and Nav */
+header {
+    display: grid;
+    grid-template-rows: max-content minmax(0px, 1fr);
+    grid-template-areas:
+        "nav"
+        "hero"
+    ;
+    height: 100vh;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 0px;
+    gap: 1.25rem;
+}
+nav a {
+    display: block;
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: lowercase;
+    transition: color 0.5s;
+}
+nav a:hover {
+    color: #ff92bc;
+}
+
+#hero {
+    grid-area: hero;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 15vh;
+}
+#hero svg {
+    transform: rotate(-10deg);
+    filter: drop-shadow(-6px 2px 0px #222);
+}
+
+/* Section 1 */
+#s1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+    gap: 1.25rem;
+}
+#s1 h1{
+    font-size: 5rem;
+}
+#s1 img {
+    display: block;
+    width: 30%;
+}
+.socials {
+    flex: 100%;
+    display: flex;
+    gap: 1.25rem;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+}
+.socials i {
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.socials i:hover {
+    color: #ff92bc;
+}
+
+/* Section 2 */
+#s2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 2rem auto;
+}
+#s2 .card {
+    text-align: center;
+    flex: 100%;
+}
+#s2 .card h2 {
+    font-size: 2.5rem;
+    margin: 1rem auto;
+}
+#s2 .card a {
+    text-decoration: none;
+    color: #ff92bc;
+    border: 1px solid #ff92bc;
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.5s;
+}
+#s2 .card a:hover {
+    background-color: #ff92bc;
+    color: #eee;
+}
+#s2 .card img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Section 3 */
+
+#s3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 4rem auto 2rem;
+}
+#s3 h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+#s3 h2 span {
+    color: #ff92bc;
+    font-size: 5rem;
+}
+#s3 p {
+    max-width: 500px;
+    margin: 0px auto;
+}
